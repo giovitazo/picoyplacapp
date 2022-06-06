@@ -1,0 +1,8 @@
+@import "./variables.scss";
+
+.results span {
+  font-family: $results-font;
+  font-size: 2em;
+  padding: 1rem 0;
+  line-height: 4rem;
+}

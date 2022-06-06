@@ -1,0 +1,21 @@
+@import "./restart.scss";
+@import "./variables.scss";
+@import "./App.scss";
+
+body {
+  background-image: url("../img/mod3.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-shrink: 1;
+  img {
+    width: 100%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

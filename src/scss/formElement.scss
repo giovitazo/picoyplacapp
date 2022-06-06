@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+label {
+  font-family: $primary-font;
+  font-size: 1.3em;
+}
+input {
+  font-family: $plate-font;
+  font-size: 1.3em;
+  border-radius: 0.5rem;
+}
+span {
+  color: $secondary-color;
+  font-family: $plate-font;
+  font-size: 1.2rem;
+}

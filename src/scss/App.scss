@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+.App {
+  background-color: $background-color;
+  background-blend-mode: darken;
+  border-radius: 20px;
+  padding: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column;
+  max-width: 100%;
+}
+
+header {
+  margin-bottom: 5vh;
+}
+
+.buttonPlate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+button {
+  font-family: $plate-font;
+  font-size: 1.3em;
+  border: solid 2px $tertiary-color;
+  margin-top: 3rem;
+  box-shadow: 3px 3px #888888;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    width: 80%;
+    margin: auto 5%;
+  }
+}
