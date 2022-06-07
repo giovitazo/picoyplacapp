@@ -4,14 +4,15 @@ import DataInput from "./DataInput";
 import FormElement from "../components/FormElement";
 import logo from "../img/Logo.png";
 import React, { Component } from "react";
+import { stateField } from "../tests.js";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      plateNumber: "",
-      date: "",
-      time: "",
+      plateNumber: new stateField(),
+      date: new stateField(),
+      time: new stateField(),
       allDataOk: false,
     };
   }
@@ -20,13 +21,19 @@ class App extends Component {
     inputs.forEach((element) => {
       element.value = "";
     });
-    this.setState({ plateNumber: "", time: "", date: "" });
+    this.setState({
+      plateNumber: new stateField(),
+      time: new stateField(),
+      date: new stateField(),
+    });
   };
   onStateChange = (event) => {
     let stateObject = function () {
-      let returnObj = {};
-      returnObj[event.target.id] = this.target.value;
-      return returnObj;
+      let returnState = {};
+      let returnObj = new stateField();
+      returnObj.value = this.target.value;
+      returnState[this.target.id] = returnObj;
+      return returnState;
     }.bind(event)();
     this.setState(stateObject);
   };
@@ -43,6 +50,7 @@ class App extends Component {
             placeHolder="PSC0610"
             type="text"
             statePart="plateNumber"
+            message={this.state.plateNumber.reason}
             stateChange={this.onStateChange}
           />
           <FormElement
