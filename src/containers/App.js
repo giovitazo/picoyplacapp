@@ -5,9 +5,10 @@ import FormElement from "../components/FormElement";
 import logo from "../img/Logo.png";
 import React, { Component } from "react";
 import { stateField } from "../tests.js";
-
+/* ENTRY POINT*/
 class App extends Component {
   constructor() {
+    /* MANAGES STATE OF THE WHOLE APPLICATION */
     super();
     this.state = {
       plateNumber: new stateField(),
@@ -17,6 +18,7 @@ class App extends Component {
     };
   }
   onReset = () => {
+    /* EMPTIES INPUTS AND RESTORES STATES */
     let inputs = document.querySelectorAll("input");
     inputs.forEach((element) => {
       element.value = "";
@@ -28,10 +30,12 @@ class App extends Component {
     });
   };
   onStateChange = (event) => {
+    /*TAKES INPUT VALUE AND UPDATES STATE */
     let stateObject = function () {
       let returnState = {};
       let returnObj = new stateField();
       returnObj.value = this.target.value;
+      returnObj.test(this.target.id);
       returnState[this.target.id] = returnObj;
       return returnState;
     }.bind(event)();

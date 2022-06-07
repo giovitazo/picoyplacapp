@@ -13,10 +13,7 @@ export default class FormElement extends Component {
           onChange={stateChange}
           id={this.props.statePart}
         />
-        <span id="plateNumberSpan" className="errorDisplay">
-          {this.props.message}
-        </span>{" "}
-        <br />
+        <span className="errorDisplay">{this.props.message}</span> <br />
       </div>
     );
   }
