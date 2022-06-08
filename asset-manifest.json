@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/picoyplacapp/static/css/main.1c29cb11.css",
+    "main.js": "/picoyplacapp/static/js/main.2b11896d.js",
+    "static/media/mod3.png": "/picoyplacapp/static/media/mod3.81a5808012f84b1c4a9a.png",
+    "index.html": "/picoyplacapp/index.html",
+    "main.1c29cb11.css.map": "/picoyplacapp/static/css/main.1c29cb11.css.map",
+    "main.2b11896d.js.map": "/picoyplacapp/static/js/main.2b11896d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c29cb11.css",
+    "static/js/main.2b11896d.js"
+  ]
+}
