@@ -29,6 +29,9 @@ button {
   border: solid 2px $tertiary-color;
   margin-top: 3rem;
   box-shadow: 3px 3px #888888;
+  &:active {
+    box-shadow: 2px 0 #ccc;
+  }
 }
 
 @media screen and (max-width: 600px) {
