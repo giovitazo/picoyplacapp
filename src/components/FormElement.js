@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../scss/formElement.scss";
 
+//form elements, they accept input and run a verification when the date is changed.
+
 export default class FormElement extends Component {
   render() {
     const { stateChange } = this.props;
